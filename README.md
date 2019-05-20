@@ -2,16 +2,17 @@
 Docker file and instructions for hosting Foundry Virtual Tabletop in a docker container.
 
 # Installation Instructions
-This guide will discuss how to host Foundry Virtual Tabletop on a docker container. This will be a generic guide that should be applicable to most hosts; however, the example steps below are for using docker on a Ubuntu 18.04.2 LTS host.
+This guide will discuss how to host Foundry Virtual Tabletop on a docker container. The following was developed for Ubuntu 18.04.2 LTS; however, the basic steps should be the same across distributions.
 
 ### The following environment was used for testing this installation:
      - Ubuntu Server 18.04.2 LTS
      - Docker Version 18.09.02 
      - Foundry Virtual Tabletop Version Beta 0.2.9 & 0.2.10
-## Basic Instalation
-> This guide assumes a basic understanding of Docker. Please ensure that docker is installed and configured on the host. The process for doing this will vary from system to system.
-> Information about docker can be found on the official page [here](https://docs.docker.com/v17.12/get-started/#containers-and-virtual-machines).
-1. Verify docker is installed with `docker version`
+## Basic Installation
+> This guide assumes a basic understanding of Docker. Please ensure that Docker is installed and configured on the host. The process for doing this will vary from system to system.
+> Information about Docker can be found on the official page [here](https://docs.docker.com/v17.12/get-started/#containers-and-virtual-machines).
+1. Verify Docker installation 
+     - `docker version`
 2. Make a directory to compile the new container
      - `mkdir <Name for directory>`
      - Example: `mkdir FVTT`
