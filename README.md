@@ -13,14 +13,14 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
 > Information about Docker can be found on the official page [here](https://docs.docker.com/v17.12/get-started/#containers-and-virtual-machines).
 1. Verify Docker installation 
      - `docker version`
-2. Make a directory to compile the new container
+2. Create a new directory to build the new container
      - `mkdir <Name for directory>`
      - Example: `mkdir FVTT`
 3. Open the new directory
      - `cd <Name of directory>`
      - Example `cd FVTT`
 4. Download the Foundry Tabletop Source for your distribution and unzip the files into the directory
-     - `wget <Full Download Link from Foundry Patreon post>`
+     - `wget <Full Linux Download Link from the Foundry Patreon>`
      - `unip ./*.zip`
 5. Download the Dockerfile found [here](https://github.com/mcjamesloon/FVTT_Docker/blob/master/Dockerfile)
      - `wget https://raw.githubusercontent.com/mcjamesloon/FVTT_Docker/master/Dockerfile`
