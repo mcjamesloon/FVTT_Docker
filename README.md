@@ -25,8 +25,9 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
 5. Download the Dockerfile found [here](https://github.com/mcjamesloon/FVTT_Docker/blob/master/Dockerfile)
      - `wget https://raw.githubusercontent.com/mcjamesloon/FVTT_Docker/master/Dockerfile`
 6. Build the Docker Image
-     - `docker build -t <Set unique image name>`
-     - Example: `docker build -t fvtt/node-web-app`
+     - `docker build -t <Set unique image name> .`
+     - Example: `docker build -t fvtt/node-web-app .`
+     - NOTE: The `.` at the end is required!
 7. Verify the Docker Image
      - `docker images`
 8. Start the Docker container
