@@ -37,7 +37,7 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
      - `docker ps`
      - This should show a container with the image name and container name you set previously.
 10. If all went right you should be able to connect to it with `<IP address of host>:<External port set in Step 8>`
-     - Example: 127.0.0.1:30000
+     - Example: 192.168.x.x:30000
 
 # Accessing the node.js console:
 * To access the console, enter the following command:
