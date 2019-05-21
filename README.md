@@ -61,7 +61,7 @@ This will be an example of how to install the ddb-importer module located [here]
 2. Change directory to /public/modules
      - `cd public/modules`
 3. Download the .zip file from github and extract the folder within
-> Note: Copy the Download Link or Raw Files
+     > Note: Copy the Download Link or Raw Files
      - `wget <URL to .zip file>`
      - `unzip -o
 4. 
