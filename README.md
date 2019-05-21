@@ -58,4 +58,10 @@ Adding Modules will vary depending on the module. By default, the modules need t
 This will be an example of how to install the ddb-importer module located [here](https://github.com/sillvva/foundry-vtt-modules/tree/master/ddb-importer)
 1. Access the shell of the container
      - See `Accessing the Shell` above
-2. Change directory to 
+2. Change directory to /public/modules
+     - `cd public/modules`
+3. Download the .zip file from github and extract the folder within
+     - `wget <URL to .zip file>`
+     - > Note: Copy the Download Link or Raw Files
+     - `unzip -o
+4. 
