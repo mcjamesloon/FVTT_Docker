@@ -53,7 +53,7 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
      - Example: `docker exec -it FVTT`
      
 ## Adding Modules:
-Adding Modules will vary depending on the module. By default, the modules need to be extracted to the `public/modules` directory. Please follow the module's instructions for other installation steps.
+> Adding Modules will vary depending on the module. By default, the modules need to be extracted to the `public/modules` directory. Please follow the module's instructions for other installation steps.
 ### Example Module Addition:
 This will be an example of how to install the ddb-importer module located [here](https://github.com/sillvva/foundry-vtt-modules/tree/master/ddb-importer)
 1. Access the shell of the container
