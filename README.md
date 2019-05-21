@@ -65,7 +65,7 @@ This will be an example of how to install the ddb-importer module located [here]
      - `wget <URL to .zip file>`
      - Example: `wget https://github.com/sillvva/foundry-vtt-modules/raw/master/ddb-importer/ddb-importer.zip`
      - `unzip -o ./*.zip`
-     > *Note: If you recieve an error that goes: `unzip: cannot find zipfile directory in one of...` Please double check that the URL that was copied downloads the module in a webbrowser. You must have the direct download link*
+     > *Note: If you recieve an error that goes: `unzip: cannot find zipfile directory in one of...` Please paste the URL into a webbrowser and make sure it does not direct to the github overview page. You must have the direct download link.*
      - `ls -la`
      > Note: It may be wise to clean up the .zip files now to make future updates easier.
      - Do this with `rm ./*.zip`
