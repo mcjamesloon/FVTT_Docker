@@ -57,4 +57,5 @@ Adding Modules will vary depending on the module. By default, the modules need t
 ### Example Module Addition:
 This will be an example of how to install the ddb-importer module located [here](https://github.com/sillvva/foundry-vtt-modules/tree/master/ddb-importer)
 1. Access the shell of the container
-     (UNFINISHED)
+     - See `Accessing the Shell` above
+2. Change directory to 
