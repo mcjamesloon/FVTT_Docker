@@ -27,7 +27,7 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
 6. Build the Docker Image
      - `docker build -t <Set unique image name> .`
      - Example: `docker build -t fvtt/node-web-app .`
-     - NOTE: The `.` at the end is required!
+     > NOTE: The `.` at the end is required!
 7. Verify the Docker Image
      - `docker images`
 8. Start the Docker container
