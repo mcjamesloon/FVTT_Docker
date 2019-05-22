@@ -25,78 +25,78 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
 
 ## Building the Container
 1. Verify Docker installation
-     > Command:
-      ```
-      docker version
-      ```
+   > Command:
+   ```
+   docker version
+   ```
 
 2. Create a new directory to build the new container
-     > Commands
-        ```
-        mkdir <name of directory>
-        cd <name of directory
-        ```
+   > Commands
+   ```
+   mkdir <name of directory>
+   cd <name of directory
+   ```
 
-     > Example:
-          ```
-          mkdir FVTT
-          cd FVTT
-          ```
+   > Example:
+   ```
+   mkdir FVTT
+   cd FVTT
+   ```
 
 4. Download the Foundry Tabletop Source for your distribution and unzip the files into the directory
-     > Commands:
-       ```
-       wget <Full Linux Download Link from the Foundry Patreon>
-       unzip ./*.zip
-       ```
+   > Commands:
+   ```
+   wget <Full Linux Download Link from the Foundry Patreon>
+   unzip ./*.zip
+   ```
 
 5. Download the raw Dockerfile from [here](Dockerfile)
-     > Command:
-       ```
-       wget https://raw.githubusercontent.com/mcjamesloon/FVTT_Docker/master/Dockerfile
-       ```
+   > Command:
+   ```
+   wget https://raw.githubusercontent.com/mcjamesloon/FVTT_Docker/master/Dockerfile
+   ```
 
 6. Build the Docker Image
-     > Command:
-       ```
-       docker build -t <Set unique image name> .
-       ```
+   > Command:
+   ```
+   docker build -t <Set unique image name> .
+   ```
 
-     > Example:
-       ```
-       docker build -t fvtt/node-web-app .
-       ```
+   > Example:
+   ```
+   docker build -t fvtt/node-web-app .
+   ```
 
-     > NOTE: The `.` at the end is required!
+   > NOTE: The `.` at the end is required!
 
 7. Verify the Docker Image
-     > Command:
-       ```
-       docker images
-       ```
+   > Command:
+   ```
+   docker images
+   ```
 
 ## Running the Container
 1. Start the Docker container
-     > Command:
-       ```
-       docker run -p <external port>:30000 -d --name <Name for container> <Image name set under step 6>
-       ```
+   > Command:
+   ```
+   docker run -p <external port>:30000 -d --name <Name for container> <Image name set under step 6>
+   ```
 
-     > Example:
-       ```
-       docker run -p 30000:30000 -d --name FVTT fvtt/node-web-app
-       ```
+ > Example:
+   ```
+   docker run -p 30000:30000 -d --name FVTT fvtt/node-web-app
+   ```
 
 2. Verify the Docker container is running
-     > Command:
-       ```
-       docker ps
-       ```
+   > Command:
+   ```
+   docker ps
+   ```
 
-     > NOTE: This should show a container with the image name and container name you set previously.
+  > NOTE: This should show a container with the image name and container name you set previously.
 
 3. If all went right you should be able to connect to it with `<IP address of host>:<External port set in Step 8>`
-     > Example: http://192.168.x.x:30000
+  > Example: http://192.168.x.x:30000
 
 #Script Installation
 ##Script Dependencies
