@@ -7,7 +7,7 @@
 # Table of Contents
 > **Select a link below to navigate to the respective documentation.**
 
-> If this is your first time here, select `Installation` from below.
+If this is your first time here, select **Installation** from below.
 
 1. [Installation](docs/Installation.md)
      - [Command Installation](docs/Installation.md#command-installation)
