@@ -1,10 +1,13 @@
 # Foundry Virtual Tabletop Docker Project by jamesloon
 
-**Disclaimer:** The source code for Foundry Virtual Tabletop is required to follow these steps. It can be obtained by subscribing the the foundry patreon [here](https://www.patreon.com/foundryvtt/posts). Likewise, all rights are due their respective owners.
+> **Disclaimer:** The source code for Foundry Virtual Tabletop is required to follow any of these guides. It can be obtained by subscribing the the foundry patreon [here](https://www.patreon.com/foundryvtt/posts).
+
+> Please adhear to all local laws and respect the rights of all owners.
 
 # Table of Contents
-> - **Select a link below to navigate to the respective documentation.**
-  - If this is your first time here, select `Installation` from below
+> **Select a link below to navigate to the respective documentation.**
+
+> If this is your first time here, select `Installation` from below.
 
 1. [Installation](docs/Installation.md)
      - [Command Installation](docs/Installation.md#command-installation)
