@@ -1,5 +1,4 @@
-**Disclaimer:** The source code for Foundry Virtual Tabletop is required to follow these steps. It can be obtained by subscribing the the foundry patreon [here](https://www.patreon.com/foundryvtt/posts). Likewise, all rights are due their respective owners. Foundry Virtual Tabletop is 
-
+**Disclaimer:** The source code for Foundry Virtual Tabletop is required to follow these steps. It can be obtained by subscribing the the foundry patreon [here](https://www.patreon.com/foundryvtt/posts). Likewise, all rights are due their respective owners. 
 # Table of Contents
 1. [Installation]()
 2. [Administration]()
