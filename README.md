@@ -1,21 +1,30 @@
 **Disclaimer:** The source code for Foundry Virtual Tabletop is required to follow these steps. It can be obtained by subscribing the the foundry patreon [here](https://www.patreon.com/foundryvtt/posts). Likewise, all rights are due their respective owners.
+
 # Table of Contents
 1. [Installation](https://github.com/mcjamesloon/FVTT_Docker#installation-instructions)
+     - [Command Installation](https://github.com/mcjamesloon/FVTT_Docker#command-installation)
+     - [Script Installation](https://github.com/mcjamesloon/FVTT_Docker#script-installation)
 2. [Administration](https://github.com/mcjamesloon/FVTT_Docker#administration)
      - [Accessing the Console](https://github.com/mcjamesloon/FVTT_Docker#accessing-the-nodejs-console)
      - [Accessing the Shell](https://github.com/mcjamesloon/FVTT_Docker#accessing-the-shell)
      - [Adding Modules](https://github.com/mcjamesloon/FVTT_Docker#adding-modules)
-3. [TBD]()
-## Installation Instructions
+3. [Backup](https://github.com/mcjamesloon/FVTT_Docker#backing-up-the-server)
+     - [Container Backup](https://github.com/mcjamesloon/FVTT_Docker#backing-up-the-container)
+     - [FVTT Folder Backup](https://github.com/mcjamesloon/FVTT_Docker#fvtt-folder-backup)
+# Installation Instructions
 This guide will discuss how to host Foundry Virtual Tabletop on a docker container. The following was developed for Ubuntu 18.04.2 LTS; however, the basic steps should be the same across distributions.
 
-#### The following environment was used for testing this installation:
+```
+# The following environment was used for testing this installation:
      - Ubuntu Server 18.04.2 LTS
      - Docker Version 18.09.02
      - Foundry Virtual Tabletop Version Beta 0.2.9 & 0.2.10
-### Basic Installation `(From scratch)`
+```
+
+## Command Installation
 > This guide assumes a basic understanding of Docker. Please ensure that Docker is installed and configured on the host. The process for doing this will vary from system to system.
 > Information about Docker can be found on the official page [here](https://docs.docker.com/v17.12/get-started/#containers-and-virtual-machines).
+
 1. Verify Docker installation
      - `docker version`
 2. Create a new directory to build the new container
@@ -33,6 +42,7 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
      - `docker build -t <Set unique image name> .`
      - Example: `docker build -t fvtt/node-web-app .`
      > NOTE: The `.` at the end is required!
+
 7. Verify the Docker Image
      - `docker images`
 8. Start the Docker container
@@ -60,6 +70,7 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
 
 ### Adding Modules:
 > Adding Modules will vary depending on the module. By default, the modules need to be extracted to the `public/modules` directory. Please follow the module's instructions for other installation steps.
+
 #### Example Module Addition:
 This will be an example of how to install the ddb-importer module located [here](https://github.com/sillvva/foundry-vtt-modules/tree/master/ddb-importer)
 1. Access the shell of the container
@@ -68,12 +79,15 @@ This will be an example of how to install the ddb-importer module located [here]
      - `cd public/modules`
 3. Download the .zip file from github and extract the folder within
      > Note: Copy the Download Link or Raw Files. Again follow the directions for the module.
+
      - `wget <URL to .zip file>`
      - Example: `wget https://github.com/sillvva/foundry-vtt-modules/raw/master/ddb-importer/ddb-importer.zip`
      - `unzip -o ./*.zip`
      > *Note: If you receive an error that goes: `unzip: cannot find zipfile directory in one of...` Please paste the URL into a web browser and make sure it does not direct to the github overview page. You must have the direct download link.*
+
      - `ls -la`
      > Note: It may be wise to clean up the .zip files now to make future updates easier.
+
      - Do this with `rm ./*.zip`
 4. Restart the docker container
      - Exit the container using the docker escape sequence *(Default is CTRL+p & CTRL+q)*
@@ -81,3 +95,63 @@ This will be an example of how to install the ddb-importer module located [here]
      - Example: `docker restart FVTT`
 5. From within the /game as the GM, go to `Settings > Manage Modules`
 6. Select the check boxes to make the applicable modules active.
+
+# Backing up the server
+> Backing up the server should be performed prior to updates. This can be done two ways,
+  * Backing up the docker container through export
+  * Backing the FVTT Folder
+
+## Method One | Exporting the docker container [Ref](https://bobcares.com/blog/docker-backup/)
+> This method is only recommended for major version releases that could break the entire node.js server. It is significantly easier to backup the `/FVTT` directory.
+
+### Backing up the container
+1. *Optional* Stop the docker container
+  - Commands:
+  ```
+  docker ps
+  docker stop -t 30 <Container ID>
+  ```
+  - Example:
+  ```
+  docker ps
+  docker stop -t 30 FVTT
+  ```
+2. Export the docker container
+  - Commands:
+  ```
+  docker ps -a
+  docker commit -p <container-ID> <backup-name>
+  docker save -o <backup-name>.tar <backup-name>
+  ```
+  - Example:
+  ```
+  docker ps -a
+  docker commit -p 679facd4ee38 FVTT_Back
+  docker save -o FVTT_Back.tar FVTT_Back
+  ```
+3. *Optional*: Save the .tar offsite.
+  - How you do this is up to you.
+
+#### Restoring the container
+1. Ensure the .tar file is in the current directory
+   ```
+   ls -l
+   ```
+2. Load the container
+   - Command:
+   ```
+   docker load -i <backup-name>.tar
+   ```
+   - Example:
+   ```
+   docker load -i FVTT_Back.tar
+   ```
+3. Run the container
+   - Command:
+   ```
+   docker run -p 30000:30000 -d --name FVTT <backup-name>.tar
+   ```
+   - Example:
+   ```
+   docker run -p 30000:30000 -d --name FVTT FVTT_Back
+   ```
