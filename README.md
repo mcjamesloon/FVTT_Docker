@@ -1,4 +1,4 @@
-**Disclaimer:** The source code for Foundry Virtual Tabletop is required to follow these steps. It can be obtained by subscribing the the foundry patreon [here](https://www.patreon.com/foundryvtt/posts). Likewise, all rights are due their respective owners. 
+**Disclaimer:** The source code for Foundry Virtual Tabletop is required to follow these steps. It can be obtained by subscribing the the foundry patreon [here](https://www.patreon.com/foundryvtt/posts). Likewise, all rights are due their respective owners.
 # Table of Contents
 1. [Installation]()
 2. [Administration]()
@@ -11,12 +11,12 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
 
 #### The following environment was used for testing this installation:
      - Ubuntu Server 18.04.2 LTS
-     - Docker Version 18.09.02 
+     - Docker Version 18.09.02
      - Foundry Virtual Tabletop Version Beta 0.2.9 & 0.2.10
 ### Basic Installation
 > This guide assumes a basic understanding of Docker. Please ensure that Docker is installed and configured on the host. The process for doing this will vary from system to system.
 > Information about Docker can be found on the official page [here](https://docs.docker.com/v17.12/get-started/#containers-and-virtual-machines).
-1. Verify Docker installation 
+1. Verify Docker installation
      - `docker version`
 2. Create a new directory to build the new container
      - `mkdir <Name for directory>`
@@ -44,6 +44,7 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
 10. If all went right you should be able to connect to it with `<IP address of host>:<External port set in Step 8>`
      - Example: 192.168.x.x:30000
 
+# Administration
 ## Accessing the node.js console:
 * To access the console, enter the following command:
      * `docker attach <Container name>`
@@ -56,7 +57,7 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
 * To access the shell of the docker container to perform tasks such as modify files or install modules, perform the following command:
      - `docker exec -it <Container name>`
      - Example: `docker exec -it FVTT`
-     
+
 ### Adding Modules:
 > Adding Modules will vary depending on the module. By default, the modules need to be extracted to the `public/modules` directory. Please follow the module's instructions for other installation steps.
 #### Example Module Addition:
