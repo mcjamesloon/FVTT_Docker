@@ -1,6 +1,6 @@
 # Foundry Virtual Tabletop Docker Project by jamesloon
 
-> **Disclaimer:** The source code for Foundry Virtual Tabletop is required to follow any of these guides. It can be obtained by subscribing the the foundry patreon [here](https://www.patreon.com/foundryvtt/posts).
+> **Disclaimer:** The source code for Foundry Virtual Tabletop is required to follow any of these guides. This repository does NOT contain any source code or links to access it. The source code can be obtained by subscribing the the foundry patreon [here](https://www.patreon.com/foundryvtt/posts).
 
 > Please adhear to all local laws and respect the rights of all owners.
 
