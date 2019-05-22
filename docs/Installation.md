@@ -82,7 +82,7 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
    docker run -p <external port>:30000 -d --name <Name for container> <Image name set under step 6>
    ```
 
- > Example:
+   > Example:
    ```
    docker run -p 30000:30000 -d --name FVTT fvtt/node-web-app
    ```
