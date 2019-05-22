@@ -1,10 +1,10 @@
 **Disclaimer:** The source code for Foundry Virtual Tabletop is required to follow these steps. It can be obtained by subscribing the the foundry patreon [here](https://www.patreon.com/foundryvtt/posts). Likewise, all rights are due their respective owners.
 # Table of Contents
-1. [Installation]()
-2. [Administration]()
-     - [Accessing the Console]()
-     - [Accessing the Shell]()
-     - [Adding Modules]()
+1. [Installation](https://github.com/mcjamesloon/FVTT_Docker#installation-instructions)
+2. [Administration](https://github.com/mcjamesloon/FVTT_Docker#administration)
+     - [Accessing the Console](https://github.com/mcjamesloon/FVTT_Docker#accessing-the-nodejs-console)
+     - [Accessing the Shell](https://github.com/mcjamesloon/FVTT_Docker#accessing-the-shell)
+     - [Adding Modules](https://github.com/mcjamesloon/FVTT_Docker#adding-modules)
 3. [TBD]()
 ## Installation Instructions
 This guide will discuss how to host Foundry Virtual Tabletop on a docker container. The following was developed for Ubuntu 18.04.2 LTS; however, the basic steps should be the same across distributions.
@@ -13,7 +13,7 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
      - Ubuntu Server 18.04.2 LTS
      - Docker Version 18.09.02
      - Foundry Virtual Tabletop Version Beta 0.2.9 & 0.2.10
-### Basic Installation
+### Basic Installation `(From scratch)`
 > This guide assumes a basic understanding of Docker. Please ensure that Docker is installed and configured on the host. The process for doing this will vary from system to system.
 > Information about Docker can be found on the official page [here](https://docs.docker.com/v17.12/get-started/#containers-and-virtual-machines).
 1. Verify Docker installation
@@ -23,7 +23,7 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
      - Example: `mkdir FVTT`
 3. Open the new directory
      - `cd <Name of directory>`
-     - Example `cd FVTT`
+     - Example: `cd FVTT`
 4. Download the Foundry Tabletop Source for your distribution and unzip the files into the directory
      - `wget <Full Linux Download Link from the Foundry Patreon>`
      - `unip ./*.zip`
@@ -71,7 +71,7 @@ This will be an example of how to install the ddb-importer module located [here]
      - `wget <URL to .zip file>`
      - Example: `wget https://github.com/sillvva/foundry-vtt-modules/raw/master/ddb-importer/ddb-importer.zip`
      - `unzip -o ./*.zip`
-     > *Note: If you recieve an error that goes: `unzip: cannot find zipfile directory in one of...` Please paste the URL into a webbrowser and make sure it does not direct to the github overview page. You must have the direct download link.*
+     > *Note: If you receive an error that goes: `unzip: cannot find zipfile directory in one of...` Please paste the URL into a web browser and make sure it does not direct to the github overview page. You must have the direct download link.*
      - `ls -la`
      > Note: It may be wise to clean up the .zip files now to make future updates easier.
      - Do this with `rm ./*.zip`
@@ -79,5 +79,5 @@ This will be an example of how to install the ddb-importer module located [here]
      - Exit the container using the docker escape sequence *(Default is CTRL+p & CTRL+q)*
      - `docker restart <Container Name>`
      - Example: `docker restart FVTT`
-5. From within the /game as the GM, goto `Settings > Manage Modules`
+5. From within the /game as the GM, go to `Settings > Manage Modules`
 6. Select the check boxes to make the applicable modules active.
