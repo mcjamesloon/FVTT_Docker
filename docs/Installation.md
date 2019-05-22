@@ -2,6 +2,7 @@
 This guide will discuss how to host Foundry Virtual Tabletop on a docker container. The following was developed for Ubuntu 18.04.2 LTS; however, the basic steps should be the same across distributions using Docker-CLI.
 
 # Table of Contents
+
 1. [Manual Build](#command-installation)
      - [Building the Container](#building-the-container)
      - [Running the Container](#running-the-container)
@@ -25,17 +26,16 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
 ## Building the Container
 1. Verify Docker installation
      > Command:
-          ```
-          docker version
-          ```
-
+      ```
+      docker version
+      ```
 
 2. Create a new directory to build the new container
-     > Commands:
-          ```
-          mkdir <Name for directory>
-          cd <Name of directory>
-          ```
+     > Commands
+        ```
+        mkdir <name of directory>
+        cd <name of directory
+        ```
 
      > Example:
           ```
@@ -97,3 +97,7 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
 
 3. If all went right you should be able to connect to it with `<IP address of host>:<External port set in Step 8>`
      > Example: http://192.168.x.x:30000
+
+#Script Installation
+##Script Dependencies
+##Running the Script
