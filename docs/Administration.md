@@ -5,6 +5,7 @@
    - [Starting the Container](#starting-the-container)
    - [Accessing the Console](#accessing-the-console)
    - [Accessing the Shell](#accessing-the-shell)
+2. [Scripts](Scripts/README.md)
 
 ## Stopping the Container
 To stop the container, perform the following:
