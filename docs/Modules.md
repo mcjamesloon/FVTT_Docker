@@ -100,7 +100,7 @@
 5. Execute the script
    > Commands:
    ```
-   sudo chmod +x ./Install-module.sh
+   chmod +x ./Install-module.sh
    ./Install-module.sh
    ```
 

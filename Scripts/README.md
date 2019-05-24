@@ -29,7 +29,7 @@
 5. Make the script executable
    > Command:
    ```
-   sudo chmod +x ./*.sh
+   chmod +x ./*.sh
    ```
 
 7. Follow the instructions at the top of the script.
