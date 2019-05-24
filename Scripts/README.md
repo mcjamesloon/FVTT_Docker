@@ -13,8 +13,8 @@
 
 ## General Installation Guide:
 1. Ensure that the FVTT server is functional.
-2. Make a backup of the FVTT files. Directions for this can be found [here](https://github.com/mcjamesloon/FVTT_Docker#backing-up-the-server)
-3. Download the script.
+2. Make a backup of the FVTT files. Directions for this can be found [here](docs/Backup.md)
+3. Download the script to the appropriate directory.
    > Command:
    ```
    wget <RAW link to script>
