@@ -8,8 +8,8 @@
 1. [General Installation Guide](#general-installation-guide)
 2. [Scripts](Scripts)
    - [WIP | Docker Builder](Scripts/Docker-Builder.sh)
-   - [WIP | Module Install](Scripts/Install-module.sh)
-   - [WIP](WIP)
+   - [Module Install](Scripts/Install-module.sh)
+     - [Script instructions](docs/Modules.md#scripted-module-addition)
 
 ## General Installation Guide:
 1. Ensure that the FVTT server is functional.
