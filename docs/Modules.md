@@ -1,7 +1,7 @@
 # Table of Contents
 1. Adding Modules:
    - [Manually Add Modules](#manual-module-addition)
-   - [Scripted Module Addition](#script-module-addition)
+   - [Scripted Module Addition](#scripted-module-addition)
 
 # Adding Modules:
 > Adding Modules will vary depending on the module. By default, the modules need to be extracted to the `public/modules` directory. Please follow the module's instructions for other installation steps.
@@ -37,9 +37,9 @@
    unzip -o ./*.zip
    ls -la
    ```
-   > *NOTE:* If you receive an error that goes: `unzip: cannot find zipfile directory in one of...` Please paste the URL into a web browser and make sure it does not direct to the github overview page. You must have the **RAW** download link.*
+   > *NOTE:* If you receive an error that goes: `unzip: cannot find zipfile directory in one of...` Please paste the URL into a web browser and make sure it does not direct to the github overview page. You must have the **RAW** download link.
 
-4. Clean up the zip files.
+4. Clean up the zip files
    > Note: This step is optional; however, it may prevent problems installing modules later down the road.
 
    > Command:
@@ -62,7 +62,7 @@
 
 6. Select the check boxes to make the applicable modules active.
 
-##Scripted Module addition
+## Scripted Module addition
 > *NOTE:* As with any script downloaded from the internet, please verify the contents of the script prior to running.
 
 1. Access the shell of the container
@@ -83,11 +83,25 @@
    wget https://raw.githubusercontent.com/mcjamesloon/FVTT_Docker/master/Scripts/Install-module.sh
    ```
 
-4. Execute the script
+4. *Optional*: To add multiple modules at once, create a text file named `urls.txt` within the public/modules directory. Then, enter the RAW download URLs for the zip files with one per line.
+   > Example Commands:
+   ```
+   cd public/modules
+   nano urls.txt
+   ```
+
+   > Example Text File (Check out these amazing works!):
+   ```
+   https://github.com/sillvva/foundry-vtt-modules/raw/master/ddb-importer/ddb-importer.zip
+   https://gitlab.com/moerills-fvtt-modules/journal-enhancer/raw/master/journal-enhancer.zip
+   https://github.com/syl3r86/BetterNPCSheet5e/raw/master/betternpcsheet5e.zip
+   ```
+
+5. Execute the script
    > Commands:
    ```
-   sudo chmod +x ./Install-module.sh
+   chmod +x ./Install-module.sh
    ./Install-module.sh
    ```
 
-5. Follow the prompts in the script.
+6. Follow the prompts in the script.
