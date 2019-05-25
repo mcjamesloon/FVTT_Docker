@@ -25,7 +25,7 @@ USER node
 RUN npm install
 
 #Add nano for convenience
-RUN npm i nano
+RUN apt-get install nano -y
 
 #Copy Source
 COPY --chown=node:node . .
