@@ -14,6 +14,9 @@ RUN chmod +x /tini
 ENTRYPOINT ["/tini", "--"]
 ##End 3rd Party Code
 
+#Add nano and vim for convenience
+RUN apt-get update && apt-get install nano vim -y
+
 #Trickery to attempt to get permissions right
 RUN groupmod -g 500 node && usermod -u 500 node
 RUN mkdir -p /home/node/FVTT && chown -R node:node /home/node
@@ -23,9 +26,6 @@ WORKDIR /home/node/FVTT
 COPY package*.json ./
 USER node
 RUN npm install
-
-#Add nano for convenience
-RUN apt-get install nano -y
 
 #Copy Source
 COPY --chown=node:node . .
