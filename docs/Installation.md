@@ -50,7 +50,7 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
    unzip ./*.zip
    ```
 
-5. Download the raw Dockerfile from [here](Dockerfile)
+5. Download the raw Dockerfile from [here](https://raw.githubusercontent.com/mcjamesloon/FVTT_Docker/master/Dockerfile)
    > Command:
    ```
    wget https://raw.githubusercontent.com/mcjamesloon/FVTT_Docker/master/Dockerfile

@@ -1,11 +1,11 @@
 # Administration
 ## Table of Contents:
-1. [Administration](docs/Administration.md)
+1. [Administration](Administration.md)
    - [Stopping the Container](#stopping-the-container)
    - [Starting the Container](#starting-the-container)
    - [Accessing the Console](#accessing-the-console)
    - [Accessing the Shell](#accessing-the-shell)
-2. [Scripts](Scripts/README.md)
+2. [Scripted Administration](Installation.md#script-installation)
 
 ## Stopping the Container
 To stop the container, perform the following:

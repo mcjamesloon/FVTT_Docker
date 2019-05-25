@@ -55,6 +55,13 @@
        docker exec -it <Container name>
        ```
 
+2. Zip the FVTT Folder.
+   > Command:
+   ```
+   cd ~
+   zip -r <filename>.zip FVTT
+   ```
+
 # Restore
      > Restoring should only be done in the event of data loss, or critical failure. Perform this with caution and pay attention to versioning.
 

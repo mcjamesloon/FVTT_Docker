@@ -7,19 +7,15 @@
 ## Table of Contents:
 1. [General Installation Guide](#general-installation-guide)
 2. [Scripts](Scripts)
-   - [WIP | Docker Builder](Scripts/Installation.sh)
-   - [Module Install](Scripts/Install-module.sh)
-     - [Script Instructions](docs/Modules.md#scripted-module-addition)
-
-## General Installation Guide:
-1. Ensure that the FVTT server is functional.
-2. Make a backup of the FVTT files. Directions for this can be found [here](docs/Backup.md)
-3. Download the script to the appropriate directory.
+   - [Docker Builder](Installation.sh)
+     - [Script Instructions](https://github.com/mcjamesloon/FVTT_Docker/blob/master/docs/Installation.md#script-installation)
+   - [Module Install](Install-module.sh)
+     - [Script Instructions](https://github.com/mcjamesloon/FVTT_Docker/blob/master/docs/Modules.md#scripted-module-addition)
 
 ## General Installation Guide:
 1. Ensure that the FVTT server is functional.
 2. Make a backup of the FVTT files.
-   - Directions for this can be found [here](https://github.com/mcjamesloon/FVTT_Docker#backing-up-the-server)
+   - Directions for this can be found [here](https://github.com/mcjamesloon/FVTT_Docker/blob/master/docs/Backup.md)
 
 3. Download the script.
    > Command:
