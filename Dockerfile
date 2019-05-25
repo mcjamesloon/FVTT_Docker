@@ -15,7 +15,7 @@ ENTRYPOINT ["/tini", "--"]
 ##End 3rd Party Code
 
 #Add nano for convenience
-RUN apt install nano -y 
+RUN npm install --save nano
 
 #Trickery to attempt to get permissions right
 RUN groupmod -g 500 node && usermod -u 500 node
