@@ -100,6 +100,8 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
 
 # Script Installation
 - Block Install Code. Paste this into terminal for the fastest setup. Below is a breakdown of this code.
+   > NOTE: This was tested on Ubuntu 18.04.2 LTS
+
    ```
    mkdir FVTT && \
    cd FVTT && \
@@ -109,8 +111,6 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
    ```
 
 1. Download the script onto the Linux Docker host.
-   > NOTE: This was tested on Ubuntu 18.04.2 LTS
-
    > Command:
    ```
    mkdir FVTT && \
@@ -131,8 +131,6 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
    ```
 
 ## Script functions
-> There are a number of functions this script can do.
-
 1. Run Function
    ```
    bash Installation.sh run
