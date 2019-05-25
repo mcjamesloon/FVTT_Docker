@@ -14,6 +14,9 @@ RUN chmod +x /tini
 ENTRYPOINT ["/tini", "--"]
 ##End 3rd Party Code
 
+#Add nano for convenience
+RUN apt install nano -y 
+
 #Trickery to attempt to get permissions right
 RUN groupmod -g 500 node && usermod -u 500 node
 RUN mkdir -p /home/node/FVTT && chown -R node:node /home/node

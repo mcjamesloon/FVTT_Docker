@@ -23,8 +23,8 @@ echo -e "${BLUE}--Loading Script--${NC}"
 function WelcomeMessage ()
 {
   echo ""
-  echo "---Jamesloon Foundry Module Addition script for Docker---"
-  echo "                  --Version 1.0.1--                      "
+  echo "---Jamesloon Foundry Module Addition script for Linux---"
+  echo "                  --Version 1.0.1--                     "
   echo ""
   echo -e "This script is to assist in deployment of modules in to the Foundry Virtual Tabletop Application.
    ${RED}This script has no warranties implied or otherwise. Use at your own risk.
