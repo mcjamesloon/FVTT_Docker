@@ -8,8 +8,8 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
      - [Running the Container](#running-the-container)
      - [Container Administration](docs/Administration)
 2. [Script Build](#script-installation)
-     - [Dependencies](#script-dependencies)
-     - [Running the Script](#running-the-script)
+     - [Script Installation](#script-installation)
+     - [Script Functions](#script-functions)
 
 ```
 # The following environment was used for testing this installation:
@@ -98,6 +98,55 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
 3. If all went right you should be able to connect to it with `<IP address of host>:<External port set in Step 8>`
   > Example: http://192.168.x.x:30000
 
-#Script Installation
-##Script Dependencies
-##Running the Script
+# Script Installation
+- Block Install Code. Paste this into terminal for the fastest setup. Below is a breakdown of this code.
+   ```
+   mkdir FVTT && \
+   cd FVTT && \
+   wget https://github.com/mcjamesloon/FVTT_Docker/raw/master/Scripts/Installation.sh && \
+   chmod +x Installation.sh && \
+   bash Installation.sh run
+   ```
+
+1. Download the script onto the Linux Docker host.
+   > NOTE: This was tested on Ubuntu 18.04.2 LTS
+
+   > Command:
+   ```
+   mkdir FVTT && \
+   cd FVTT && \
+   wget https://github.com/mcjamesloon/FVTT_Docker/raw/master/Scripts/Installation.sh
+   ```
+
+2. Make the script executable:
+   > Command:
+   ```
+   chmod +x Installation.sh
+   ```
+
+3. Run the script   
+   > Command:
+   ```
+   bash Installation.sh run
+   ```
+
+## Script functions
+> There are a number of functions this script can do.
+
+1. Run Function
+   ```
+   bash Installation.sh run
+   ```
+   > This function runs the script and gives options. This is the safest place to start.
+
+2. Install Function
+   ```
+   bash Installation.sh install
+   ```
+   > This function builds the Docker container.
+
+3. Administration Function
+   ```
+   bash Installation.sh administration
+   ```
+   > This function brings up the administration selection screen
