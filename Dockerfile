@@ -14,8 +14,8 @@ RUN chmod +x /tini
 ENTRYPOINT ["/tini", "--"]
 ##End 3rd Party Code
 
-#Add nano and vim for convenience
-RUN apt-get update && apt-get install nano vim -y
+#Add nano, vim, and zip for convenience
+RUN apt-get update && apt-get install nano vim zip -y
 
 #Trickery to attempt to get permissions right
 RUN groupmod -g 500 node && usermod -u 500 node
