@@ -57,7 +57,7 @@ function fUnzip ()
     If they are not removed, it will cause issues when this script is run again."
   select yn in "Yes" "No"; do
     case $yn in
-      Yes) echo -e "${RED}Removing files." && rm ./*.zip ; break;;
+      Yes) echo -e "${RED}Removing files.${NC}" && rm ./*.zip ; break;;
       No) echo "Moving on. Please remove these files before running this script again." ; break;;
     esac
   done
