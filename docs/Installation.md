@@ -8,7 +8,7 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
      - [Running the Container](#running-the-container)
      - [Container Administration](Administration.md#script-administration)
 2. [Script Build](#script-installation)
-     - [Script Installation](#script-installation)
+     - [Install Code](#block-install-code)
      - [Script Functions](#script-functions)
 
 ```
@@ -99,7 +99,7 @@ The following environment was used for testing this installation:
   > Example: http://192.168.x.x:30000
 
 # Script Installation
-## Block Install Code.
+## Block Install Code
    Paste this into terminal for the fastest setup. Below is a breakdown of this code.
    > NOTE: This was tested on Ubuntu 18.04.2 LTS
 
