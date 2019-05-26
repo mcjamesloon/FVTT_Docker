@@ -14,7 +14,8 @@
        * Backing up the docker container through export
        * Backing the FVTT Folder
 
-## Backing Up the Container [Ref](https://bobcares.com/blog/docker-backup/)
+## Backing Up the Container
+[Ref](https://bobcares.com/blog/docker-backup/)
 
 1. *Optional* Stop the docker container
      > Commands:
@@ -54,6 +55,13 @@
        docker ps
        docker exec -it <Container name>
        ```
+
+2. Zip the FVTT Folder.
+   > Command:
+   ```
+   cd ~
+   zip -r <filename>.zip FVTT
+   ```
 
 # Restore
      > Restoring should only be done in the event of data loss, or critical failure. Perform this with caution and pay attention to versioning.

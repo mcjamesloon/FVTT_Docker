@@ -1,7 +1,7 @@
 # Table of Contents
-1. Adding Modules:
-   - [Manually Add Modules](#manual-module-addition)
-   - [Scripted Module Addition](#scripted-module-addition)
+Adding Modules:
+1. [Manually Add Modules](#manual-module-addition)
+2. [Scripted Module Addition](#scripted-module-addition)
 
 # Adding Modules:
 > Adding Modules will vary depending on the module. By default, the modules need to be extracted to the `public/modules` directory. Please follow the module's instructions for other installation steps.
@@ -66,7 +66,7 @@
 > *NOTE:* As with any script downloaded from the internet, please verify the contents of the script prior to running.
 
 1. Access the shell of the container
-   > See [Accessing the shell](docs/Administration#accessing-the-shell)
+   > See [Accessing the shell](Administration#accessing-the-shell)
    ```
    docker exec -it <Container Name> /bin/bash
    ```
@@ -77,7 +77,7 @@
    cd public/modules
    ```
 
-3. Download the script located [here](scripts/Install-module.sh)
+3. Download the script located [here](https://raw.githubusercontent.com/mcjamesloon/FVTT_Docker/master/Scripts/Install-module.sh)
    > Command:
    ```
    wget https://raw.githubusercontent.com/mcjamesloon/FVTT_Docker/master/Scripts/Install-module.sh

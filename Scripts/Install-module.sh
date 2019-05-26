@@ -126,7 +126,7 @@ function selection ()
       "Quit")
         echo "Exiting program..."; break
         ;;
-      *) echo "invalid option $REPLY";;
+      *) echo "Invalid option $REPLY";;
     esac
   done
 }
