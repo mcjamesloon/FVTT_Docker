@@ -6,20 +6,20 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
 1. [Manual Build](#command-installation)
      - [Building the Container](#building-the-container)
      - [Running the Container](#running-the-container)
-     - [Container Administration](docs/Administration)
+     - [Container Administration](Administration#script-installation)
 2. [Script Build](#script-installation)
      - [Script Installation](#script-installation)
      - [Script Functions](#script-functions)
 
 ```
-# The following environment was used for testing this installation:
+The following environment was used for testing this installation:
      - Ubuntu Server 18.04.2 LTS
      - Docker Version 18.09.02
      - Foundry Virtual Tabletop Version Beta 0.2.9 & 0.2.10
 ```
 
 # Command Installation
-> This guide assumes a basic understanding of Docker. Please ensure that Docker is installed and configured on the host. The process for doing this will vary from system to system.
+> **This guide assumes a basic understanding of Docker. Please ensure that Docker is installed and configured on the host. The process for doing this will vary from system to system.**
 
 > NOTE: Information about Docker can be found on the official page [here](https://docs.docker.com/v17.12/get-started/#containers-and-virtual-machines).
 
@@ -99,7 +99,8 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
   > Example: http://192.168.x.x:30000
 
 # Script Installation
-- Block Install Code. Paste this into terminal for the fastest setup. Below is a breakdown of this code.
+## Block Install Code.
+   Paste this into terminal for the fastest setup. Below is a breakdown of this code.
    > NOTE: This was tested on Ubuntu 18.04.2 LTS
 
    ```
@@ -110,6 +111,7 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
    bash Installation.sh run
    ```
 
+## Code Breakdown
 1. Download the script onto the Linux Docker host.
    > Command:
    ```
