@@ -22,6 +22,6 @@ If this is your first time here, select **Installation** from below.
      - [Stopping the Container](docs/Administration.md#stopping-the-container)
      - [Starting the Container](docs/Administration.md#starting-the-container)
 3. [Backup](docs/Backup.md)
-     - [Container Backup](docs/Backup.md#backing-up-the-container-ref)
+     - [Container Backup](docs/Backup.md#backing-up-the-container)
      - [FVTT Folder Backup](docs/Backup.md#backing-up-the-folder)
-     - [Restoring Backups](docks/Backup.md#restore)
+     - [Restoring Backups](docs/Backup.md#restore)

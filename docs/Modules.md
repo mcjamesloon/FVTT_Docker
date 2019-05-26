@@ -1,7 +1,7 @@
 # Table of Contents
-1. Adding Modules:
-   - [Manually Add Modules](#manual-module-addition)
-   - [Scripted Module Addition](#scripted-module-addition)
+Adding Modules:
+1. [Manually Add Modules](#manual-module-addition)
+2. [Scripted Module Addition](#scripted-module-addition)
 
 # Adding Modules:
 > Adding Modules will vary depending on the module. By default, the modules need to be extracted to the `public/modules` directory. Please follow the module's instructions for other installation steps.
