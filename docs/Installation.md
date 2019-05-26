@@ -6,7 +6,7 @@ This guide will discuss how to host Foundry Virtual Tabletop on a docker contain
 1. [Manual Build](#command-installation)
      - [Building the Container](#building-the-container)
      - [Running the Container](#running-the-container)
-     - [Container Administration](Administration#script-installation)
+     - [Container Administration](Administration.md#script-administration)
 2. [Script Build](#script-installation)
      - [Script Installation](#script-installation)
      - [Script Functions](#script-functions)

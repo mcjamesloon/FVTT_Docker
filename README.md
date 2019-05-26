@@ -16,6 +16,7 @@ If this is your first time here, select **Installation** from below.
      - [Installation Script](Scripts/Installation.sh)
      - [Module Installation Script](Scripts/Install-module.sh)
 2. [Administration](docs/Administration.md#administration)
+     - [Scripted Administration](docks/Administration.md#script-administration)
      - [Accessing the Console](docs/Administration.md#accessing-the-console)
      - [Accessing the Shell](docs/Administration.md#accessing-the-shell)
      - [Stopping the Container](docs/Administration.md#stopping-the-container)

@@ -5,7 +5,7 @@
    - [Accessing the Shell](#accessing-the-shell)
    - [Stopping the Container](#stopping-the-container)
    - [Starting the Container](#starting-the-container)
-2. [Scripted Administration](Installation.md#script-installation)
+2. [Scripted Administration](#script-administration)
 
 ## Accessing the console
 To access the console, enter the following command:
@@ -64,3 +64,26 @@ To start the container after host reboot or stopping the container, perform the 
   docker ps -a
   docker start FVTT
   ```
+
+# Script Administration
+These steps are to be performed on the Docker host system.
+
+1. Download the file [here](/master/Scripts/Installation.sh)
+   > Command:
+   ```
+   wget https://github.com/mcjamesloon/FVTT_Docker/raw/master/Scripts/Install-module.sh
+   ```
+
+2. Make the script executable.
+   > Command:
+   ```
+   chmod +x Installation.sh
+   ```
+
+3. Run the `administration` function
+   > Command:
+   ```
+   bash Installation.sh administration
+   ```
+
+4. Follow the prompts in the script
