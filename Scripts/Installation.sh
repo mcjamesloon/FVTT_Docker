@@ -6,7 +6,7 @@
 # This script will file-spam the directory it is run from. Please consider the ramifications of this.
 #
 # Please respect the wishes of the source and **DO NOT PUBLISH** your compiled docker container on Docker Hub.
-# Doing so will inadvertiantly publish the source code.
+# Doing so will inadvertently publish the source code.
 #
 # > Please make sure the general script installation guide is followed at https://github.com/mcjamesloon/FVTT_Docker/tree/master/Scripts
 #
@@ -113,7 +113,7 @@ function install ()
   # Unzip the Source Code
   function iUnzip ()
   {
-    echo "Unziping Files. Install the 'unzip' package if error occurs. Or unzip the files manually."
+    echo "Unzipping Files. Install the 'unzip' package if error occurs. Or unzip the files manually."
     if unzip | grep -e 'UnZip [0-9]'; then
       echo "Package 'unzip' is installed. Continuing."
     else

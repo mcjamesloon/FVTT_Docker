@@ -1,6 +1,8 @@
 # Installation Instructions
 This guide will discuss how to host Foundry Virtual Tabletop on a docker container. The following was developed for Ubuntu 18.04.2 LTS; however, the basic steps should be the same across distributions using Docker-CLI.
 
+> **Disclaimer:** The source code for Foundry Virtual Tabletop is required to follow any of these guides. This repository does NOT contain any source code or direct links to it. The source code can be obtained by subscribing the Foundry Patreon [here](https://www.patreon.com/foundryvtt/posts).
+
 # Table of Contents
 
 1. [Manual Build](#command-installation)
