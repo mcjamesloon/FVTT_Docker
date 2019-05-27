@@ -69,9 +69,10 @@ function singleAddition ()
   echo "Entered single addition mode"
   echo -e "${BLUE}Please paste in the URL of the RAW .zip module below:${NC}"
   read sURL
+  ssURL=$sURL
   echo -e "${RED}You have entered:${NC} $sURL"
-  sleep 2
-  if [[ $sURL == *"raw"* ]]
+  sleep 1
+  if [[ $ssURL == *"raw"* ]]
     then
       echo "Downloading .zip file" && wget $sURL
       fUnzip
