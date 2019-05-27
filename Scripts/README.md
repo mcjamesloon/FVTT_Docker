@@ -1,6 +1,8 @@
 # Scripts Directory for mcjamesloon's FVTT Docker project.
 > Disclaimer: Each script will have it's own installation steps and usage guide built into the comments at the top of the script and the documentation found at [docs](docs).
 
+> **Disclaimer:** The source code for Foundry Virtual Tabletop is required to follow any of these guides. This repository does NOT contain any source code or direct links to it. The source code can be obtained by subscribing the Foundry Patreon [here](https://www.patreon.com/foundryvtt/posts).
+
 ## Warning:
 > NOTE: As with any script from the internet, look over the script prior to installation for malicious code.
 

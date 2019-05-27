@@ -80,7 +80,7 @@ function singleAddition ()
       echo "RAW FILE NOT DETECTED. Please double check the URL and run the script again."
       exit
   fi
-  echo "Addition compleate. Please restart the server and activate the module from within Foundryvtt."; exit
+  echo "Addition complete. Please restart the server and activate the module from within Foundryvtt."; exit
 }
 #
 #Begin Text File Addition mode
@@ -154,7 +154,7 @@ function run ()
         however there is no harm in double checking that the script is being executed from:
         'public/modules'"
       echo -e "Directory Script found = $wrkdir
-        If you have done this and beleive this is as error;
+        If you have done this and believe this is as error;
         run the script with the command 'bash Install-module.sh selection'"
       sleep 5
       exit;
