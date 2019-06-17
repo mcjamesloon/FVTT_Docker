@@ -27,7 +27,7 @@ COPY --chown=node:node . .
 
 #Dependencies
 WORKDIR /home/node/FVTT/resources/app
-COPY package*.json ./
+COPY ./resources/app/package*.json ./
 USER node
 RUN npm install
 
