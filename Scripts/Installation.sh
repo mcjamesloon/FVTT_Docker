@@ -79,7 +79,7 @@ function administration ()
         docker ps -a
         read -p "Please enter the name of the docker container to backup:" dName
         read -p "Please enter the name of the local folder to create:" foldName
-        echo -e "This script will copy the public directory from $dName to the current directory with the name $foldName"
+        echo -e "This script will copy the public directory from $dName to the current directory with the name $foldName. This will take some time."
         docker cp $dName:/home/node/FVTT/resources/app/public $foldName
         ls -l; exit;;
       "7. Quit")
