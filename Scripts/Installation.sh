@@ -48,7 +48,7 @@ function WelcomeMessage ()
 #
 function administration ()
 {
-  sOptions=("1. Accessing the console" "2. Accessing the shell" "3. Restart the server" "4. Stop the server" "5. Start the server" "6. Quit")
+  sOptions=("1. Accessing the console" "2. Accessing the shell" "3. Restart the server" "4. Stop the server" "5. Start the server" "6. Backup the public directory to local folder" "7. Quit")
   select opt in "${sOptions[@]}"
   do
     case $opt in
@@ -75,7 +75,14 @@ function administration ()
         docker ps -a
         read -p "Enter the name of the docker container to start:" dName
         docker start $dName; exit;;
-      "6. Quit")
+      "6. Backup the public directory to local folder")
+        docker ps -a
+        read -p "Please enter the name of the docker container to backup:" dName
+        read -p "Please enter the name of the local folder to create:" foldName
+        echo -e "This script will copy the public directory from $dName to the current directory with the name $foldName"
+        docker cp $dName:/home/node/FVTT/resources/app/public $foldName
+        ls -l; exit;;
+      "7. Quit")
         echo "Exiting"
         exit;;
       *)
