@@ -48,6 +48,25 @@
     - How you do this is up to you.
 
 ## Backing Up the Folder
+### Backing Up Using the Script
+1. Ensure that the [Install.sh](https://github.com/mcjamesloon/FVTT_Docker/raw/master/Scripts/Installation.sh) is installed into the backup directory and is executable. 
+     > Command:
+       ```
+       mkdir FVTT && \
+       cd FVTT && \
+       wget https://github.com/mcjamesloon/FVTT_Docker/raw/master/Scripts/Installation.sh && \
+       chmod +x Installation.sh
+       ```
+
+2. Run the Adminstration Script
+     > Command:
+       ```
+       bash Installation.sh administration
+       ```
+
+3. Select Option 6
+
+### Backing Up Manually
 
 1. Access the shell via directions found [here](https://github.com/mcjamesloon/FVTT_Docker/tree/master/administration.md)
      > Command:
